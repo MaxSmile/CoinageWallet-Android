@@ -986,6 +986,10 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 	if (nHeight == 1) {
 		nSubsidy = 2000000 * COIN;
 	}
+    //ChangedForRealPointCoin
+    if (nHeight >= 20000) {
+        nSubsidy = 500 * COIN;
+    }
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%" PRIszu "\n", FormatMoney(nSubsidy).c_str(), nSubsidy);

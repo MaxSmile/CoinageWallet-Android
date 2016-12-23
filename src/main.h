@@ -43,8 +43,8 @@ static const unsigned int MAX_INV_SZ = 50000;
 static const int64_t MIN_TX_FEE = 10000;
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 42000000 * COIN;
-//static const int64_t MAX_MONEY = 2000000000 * COIN;
+//static const int64_t MAX_MONEY = 42000000 * COIN;
+static const int64_t MAX_MONEY = 2000000000 * COIN;
 static const int64_t COIN_YEAR_REWARD = 5 * CENT; // 5% per year
 //static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
 
