@@ -31,12 +31,6 @@ it on. Select your device from the list, and hit continue.
 **NOTE**
 If you are attempting to build on a Lollipop emulator, please ensure that you are using *Android 5.*.* armeabi-v7*. It will not build on an x86/x86_64 emulator.
 
-## Contributions
-
-Your contributions are very welcome, be it translations, extra features or new coins support. Just
-fork this repo and create a pull request with your changes.
-
-
 ## Releasing the app
 
 To release the app follow the steps.
