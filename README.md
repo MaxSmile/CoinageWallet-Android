@@ -36,14 +36,6 @@ If you are attempting to build on a Lollipop emulator, please ensure that you ar
 Your contributions are very welcome, be it translations, extra features or new coins support. Just
 fork this repo and create a pull request with your changes.
 
-For new coins support read this [document](https://coinomi.com/AddingSupportForANewCurrency/).
-Generally you need:
-
-* Electrum-server support
-* Coinomi core support
-* A beautiful vector icon
-* Entry to the [BIP44 registry](https://github.com/satoshilabs/docs/blob/master/slips/slip-0044.rst) that is maintained by Satoshi labs
-
 
 ## Releasing the app
 
