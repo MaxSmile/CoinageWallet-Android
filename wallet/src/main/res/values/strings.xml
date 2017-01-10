@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Coin Wallet</string>
-    <!--<string name="app_package" translatable="false">com.coinomi.wallet</string>-->
-    <string name="app_package" translatable="false">com.vasilkoff.realpointcoin_wallet</string>
+    <string name="app_name" translatable="false">Coins Wallet</string>
+    <string name="app_package" translatable="false">com.vasilkoff.coin.wallet</string>
     <string name="coinomi_website" translatable="false">https://coinomi.com</string>
     <string name="almost_equal_to" translatable="false">≈</string>
     <string name="action_scan_qr_code">Scan</string>

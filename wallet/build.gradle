@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+
 android {
     signingConfigs {
         singing_ {
@@ -10,24 +11,32 @@ android {
         }
     }
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "24.0.3"
     defaultConfig {
-        applicationId "com.vasilkoff.realpointcoin_wallet"
+        applicationId "com.vasilkoff.coin.wallet"
         minSdkVersion 10
         targetSdkVersion 23
-        //versionCode 56
-        versionCode 73
-        versionName "v0.7.9"
-        //versionName "v1.6.3"
+        versionCode 75
+        versionName "v0.8.0"
+
+        jackOptions {
+            enabled true
+        }
+    }
+    dexOptions {
+        incremental true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     buildTypes {
         release {
-            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.singing_
         }
         debug {
-            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -36,6 +45,7 @@ android {
             setRoot('src/test')
         }
     }
+
 }
 
 repositories {
@@ -75,18 +85,3 @@ dependencies {
     }
     compile 'com.jakewharton:butterknife:7.0.1'
 }
-
-//apply plugin: 'robolectric'
-
-//robolectric {
-//    include '**/*Test.class'
-//    exclude '**/espresso/**/*.class'
-//}
-
-//apply plugin: 'idea'
-
-//idea {
-//    module {
-//        testOutputDir = file('build/test-classes/debug')
-//    }
-//}
