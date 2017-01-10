@@ -5,8 +5,7 @@ android {
         singing_ {
             keyAlias 'complete'
             keyPassword '100Complete'
-            storeFile file('E:/projects/Coinomi_Local_RealPointCoin/skeys/sign.jks')
-            //storeFile file('/Users/vitaligrabovski/Documents/projects_android/Coinomi_Local_RealPointCoin/skeys/sign.jks')
+            storeFile file('../skeys/sign.jks')
             storePassword '100Complete'
         }
     }
