@@ -329,7 +329,7 @@ public class Constants {
     );
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
-            //BitcoinMain.get(),
+            BitcoinMain.get(),
             //AsiacoinMain.get(),
             //AuroracoinMain.get(),
             //BatacoinMain.get(),
@@ -346,7 +346,9 @@ public class Constants {
             //EguldenMain.get(),
             //Changed for Evotion
             //EvotionCoinMain.get(),
-            RealPointCoinMain.get()
+            LitecoinMain.get(),
+            RealPointCoinMain.get(),
+            BlackcoinMain.get(),
             //FeathercoinMain.get(),
             //GcrMain.get(),
             //GuldenMain.get(),
@@ -362,7 +364,7 @@ public class Constants {
 //            NxtMain.get(),
             //OKCashMain.get(),
             //ParkbyteMain.get(),
-            //PeercoinMain.get(),
+            PeercoinMain.get()//,
             //PotcoinMain.get(),
             //ReddcoinMain.get(),
             //RichcoinMain.get(),

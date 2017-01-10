@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">RPC Wallet</string>
+    <string name="app_name" translatable="false">Coin Wallet</string>
     <!--<string name="app_package" translatable="false">com.coinomi.wallet</string>-->
     <string name="app_package" translatable="false">com.vasilkoff.realpointcoin_wallet</string>
     <string name="coinomi_website" translatable="false">https://coinomi.com</string>
@@ -78,7 +78,7 @@
     <string name="trade">Exchange</string>
     <string name="receive">Receive</string>
     <!-- Welcome fragment -->
-    <string name="welcome_text">Welcome to RPC Wallet</string>
+    <string name="welcome_text">Welcome to Coin Wallet</string>
     <string name="create_wallet">Create a new wallet</string>
     <string name="restore_wallet">Restore a wallet</string>
     <string name="test_wallet">Test wallet</string>
@@ -107,7 +107,7 @@
     <!-- Wallet activity -->
     <string name="test_wallet_message">This is a test wallet, where you can send and receive testnet Bitcoins, Litecoin and Dogecoins.\n\nIf you want to use the wallet with real money please go to: <b>Settings &gt; Restore wallet &gt; Create a new wallet</b>.</string>
     <string name="wallet_update_title">New version available</string>
-    <string name="wallet_update_message">A new version of RPC Wallet is available, it contains new features and fixes.</string>
+    <string name="wallet_update_message">A new version of Coin Wallet is available, it contains new features and fixes.</string>
     <string name="pay_with">Send with</string>
     <string name="exchange_and_pay_title">Exchange and send</string>
     <!-- PayToDialog-->
@@ -203,8 +203,8 @@
         <item quantity="other">%d seconds</item>
     </plurals>
     <!-- About Activity -->
-    <string name="title_activity_about">About RPC Wallet</string>
-    <string name="app_name_long">RPC Wallet for Android</string>
+    <string name="title_activity_about">About Coin Wallet</string>
+    <string name="app_name_long">Coin Wallet</string>
     <!--<string name="about_licence">An open source project\nhttps://github.com/Coinomi/coinomi-android</string>-->
     <string name="about_licence">Based on open source project\nhttps://github.com/Coinomi/coinomi-android</string>
     <string name="about_credits_nubits">Server infrastructure donated by NuBits - The World\'s First Stable Digital Currency\nhttps://nubits.com/</string>
@@ -217,7 +217,7 @@
     <string name="about_credits_crypto_icons">Crypto-icons by Chris Shepherd\nhttps://github.com/shphrd/crypto-icons</string>
     <string name="about_credits_font_icons">Font-icons by Daniel Bruce\nhttp://www.entypo.com</string>
     <string name="about_credits_exchange_rates">Exchange rates provided by\nhttp://www.cryptocoincharts.info/\nhttps://bitcoinaverage.com/</string>
-    <string name="about_coinomi_copyright" translatable="false">\u00A9 2016 RPC Wallet</string>
+    <string name="about_coinomi_copyright" translatable="false">\u00A9 2016 Coinomi\n\u00A9 2017 Coin Wallet</string>
     <!-- Add Coins -->
     <string name="title_activity_add_coins">Add coins</string>
     <!-- %1$s is the coin name e.g. ... create a Bitcoin account ... -->
@@ -370,7 +370,7 @@
     <string name="account_extended_private_key_label">Extended private key</string>
     <string name="account_private_key_warning">The private key allows you to send coins from this account. It is not necessary to backup this key as it is derived from your <i>recovery phrase</i></string>
     <!-- Support -->
-    <string name="support_message" translatable="false">Contact RPC Wallet support</string>
+    <string name="support_message" translatable="false">Contact Coin Wallet support</string>
     <!-- Sweep wallet -->
     <!-- Sweep paper wallet means to redeem coins from a code usually printed on a paper -->
     <string name="title_activity_sweep_wallet" translatable="false">Sweep paper wallet</string>
@@ -405,9 +405,9 @@
     <string name="terms_of_service" translatable="false">LEGAL DISCLAIMER\n
 \n
 \n
-1. Risks related to the use of RPC Wallet\n
+1. Risks related to the use of Coin Wallet\n
 \n
-RPC Wallet will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:\n
+Coin Wallet will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:\n
 \n
 (1) Mistakes made by the user of any cryptocurrency-related software or service, e.g., forgotten passwords, payments sent to wrong coin addresses, and accidental deletion of wallets.\n
 \n

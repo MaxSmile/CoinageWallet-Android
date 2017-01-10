@@ -21,16 +21,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+			<!--coinomi_logo_gradient-->
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/coinomi_logo_gradient"
+                android:src="@drawable/wallet_logo_transparent1"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true" />
 
-            <TextView
+            <!--
+                <TextView
                 style="@style/AppNameLong"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,6 +40,16 @@
                 android:id="@+id/textView"
                 android:layout_marginTop="172dp"
                 android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            -->
+            <TextView
+                style="@style/AppNameLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name_long"
+                android:id="@+id/textView"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="3dp"
                 android:layout_centerHorizontal="true" />
 
             <TextView

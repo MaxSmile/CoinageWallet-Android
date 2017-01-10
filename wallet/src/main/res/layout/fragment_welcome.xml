@@ -10,6 +10,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
+		<!--intro_logo-->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
@@ -17,7 +18,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="3"
             android:padding="@dimen/standard_margin"
-            android:src="@drawable/intro_logo" />
+            android:src="@drawable/wallet_logo" />
 
         <TextView
             android:id="@+id/welcome_text"
