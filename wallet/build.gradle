@@ -18,9 +18,9 @@ android {
         targetSdkVersion 23
         versionCode 75
         versionName "v0.8.0"
-
+        multiDexEnabled true
         jackOptions {
-            enabled true
+            enabled false
         }
     }
     dexOptions {
@@ -28,11 +28,13 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
+
     buildTypes {
         release {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.singing_
         }
@@ -84,4 +86,7 @@ dependencies {
         exclude module: 'support-v4'
     }
     compile 'com.jakewharton:butterknife:7.0.1'
+
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
 }

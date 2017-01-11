@@ -25,7 +25,11 @@ dependencies {
     testCompile 'junit:junit:4.11'
     testCompile 'org.mockito:mockito-all:1.9.5'
     testCompile 'com.squareup.okhttp:mockwebserver:2.3.0'
+
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
 }
+
 
 sourceSets {
     unitTest {
