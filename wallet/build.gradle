@@ -22,6 +22,7 @@ android {
         jackOptions {
             enabled false
         }
+        setProperty("archivesBaseName", "coin_wallet-$versionName-$versionCode")
     }
     dexOptions {
         incremental true
