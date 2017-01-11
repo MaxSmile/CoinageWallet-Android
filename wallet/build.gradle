@@ -16,8 +16,8 @@ android {
         applicationId "com.vasilkoff.coin.wallet"
         minSdkVersion 10
         targetSdkVersion 23
-        versionCode 75
-        versionName "v0.8.0"
+        versionCode 76
+        versionName "v0.8.1"
         multiDexEnabled true
         jackOptions {
             enabled false
