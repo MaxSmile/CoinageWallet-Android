@@ -917,7 +917,7 @@ public class SendFragment extends WalletFragment {
     }
 
     private void validateAddress(boolean isTyping) {
-        if (address == null) {
+        if (address == null && sendToAddressView!=null) {
             String input = sendToAddressView.getText().toString().trim();
 
             try {
