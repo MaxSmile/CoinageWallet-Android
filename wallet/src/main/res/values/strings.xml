@@ -373,7 +373,7 @@
     <!-- Sweep wallet -->
     <!-- Sweep paper wallet means to redeem coins from a code usually printed on a paper -->
     <string name="title_activity_sweep_wallet" translatable="false">Sweep paper wallet</string>
-    <string name="sweep_wallet_info" translatable="false">You are about to transfer coins from a paper wallet to your RPC Wallett.\nAfter the transfer is complete, please avoid reusing the paper wallet for security reasons.\n\nSupported formats: WIF, BIP38, Mini private key.</string>
+    <string name="sweep_wallet_info" translatable="false">You are about to transfer coins from a paper wallet to your Wallet.\nAfter the transfer is complete, please avoid reusing the paper wallet for security reasons.\n\nSupported formats: WIF, BIP38, Mini private key.</string>
     <string name="sweep_wallet_key_title" translatable="false">Private key</string>
     <string name="sweep_wallet_key_password" translatable="false">Private key password</string>
     <string name="sweep_wallet_key_hint" translatable="false">type or scan a private key</string>
