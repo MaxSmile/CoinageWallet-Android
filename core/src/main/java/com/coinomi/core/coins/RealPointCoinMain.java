@@ -17,13 +17,13 @@ public class RealPointCoinMain extends PeerFamily {
         //dumpedPrivateKeyHeader = 153;
 
         name = "RealPointCoin (beta)";
-        symbol = "RPC";
+        symbol = "RPТ";
         uriScheme = "realpointcoin";
         bip44Index = 139;
         unitExponent = 8;
-        feeValue = value(100000); // 0.00001 EVO
+        feeValue = value(100000); // 0.00001 RPT
         minNonDust = value(1);
-        softDustLimit = value(1000000); // 0.01 BLK
+        softDustLimit = value(1000000); // 0.01 RPT
         softDustPolicy = SoftDustPolicy.AT_LEAST_BASE_FEE_IF_SOFT_DUST_TXO_PRESENT;
         signedMessageHeader = toBytes("RealPointCoin Signed Message:\n");
 

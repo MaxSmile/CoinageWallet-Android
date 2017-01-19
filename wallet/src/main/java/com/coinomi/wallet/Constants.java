@@ -123,7 +123,7 @@ public class Constants {
     public static final char CURRENCY_MINUS_SIGN = '-';
 
     public static final String MARKET_APP_URL = "market://details?id=%s";
-    public static final String BINARY_URL = "https://github.com/Coinomi/coinomi-android/releases";
+    public static final String BINARY_URL = "https://github.com/MaxSmile/RealPointCoin-Android/tree/master/binaries";
 
     public static final String VERSION_URL = "https://coinomi.com/version";
     //public static final String SUPPORT_EMAIL = "support@coinomi.com";
@@ -333,7 +333,6 @@ public class Constants {
             //AsiacoinMain.get(),
             //AuroracoinMain.get(),
             //BatacoinMain.get(),
-            //BlackcoinMain.get(),
 //            BurstMain.get(),
             //CanadaeCoinMain.get(),
             //CannacoinMain.get(),
@@ -356,15 +355,15 @@ public class Constants {
             //JumbucksMain.get(),
             //LitecoinMain.get(),
             //MonacoinMain.get(),
-            //NamecoinMain.get(),
+            NamecoinMain.get(),
             //NeoscoinMain.get(),
-            //NovacoinMain.get(),
+            NovacoinMain.get(),
             //NuBitsMain.get(),
             //NuSharesMain.get(),
-//            NxtMain.get(),
-            //OKCashMain.get(),
+            NxtMain.get(),
+            OKCashMain.get(),
             //ParkbyteMain.get(),
-            PeercoinMain.get()//,
+            PeercoinMain.get(),
             //PotcoinMain.get(),
             //ReddcoinMain.get(),
             //RichcoinMain.get(),
@@ -372,7 +371,7 @@ public class Constants {
             //ShadowCashMain.get(),
             //VergeMain.get(),
             //VertcoinMain.get(),
-            //VpncoinMain.get(),
+            VpncoinMain.get()//,
             //BitcoinTest.get(),
             //LitecoinTest.get(),
             //DogecoinTest.get()
