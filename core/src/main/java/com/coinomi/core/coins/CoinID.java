@@ -66,7 +66,8 @@ public enum CoinID {
     IXCOIN_MAIN(IxcoinMain.get()),
     //Changed for Evotion
     EVOTION_MAIN(EvotionCoinMain.get()),
-    REALPOINTCOIN_MAIN(RealPointCoinMain.get());
+    REALPOINTCOIN_MAIN(RealPointCoinMain.get()),
+    TRITIUM_MAIN(TritiumMain.get());
     ;
 
     private static List<CoinType> types;

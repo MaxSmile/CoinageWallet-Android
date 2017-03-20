@@ -107,6 +107,8 @@
                 <data android:scheme="clubcoin" />
                 <data android:scheme="richcoin" />
                 <data android:scheme="evotion" />
+                <data android:scheme="realpointcoin" />
+                <data android:scheme="tritium" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />

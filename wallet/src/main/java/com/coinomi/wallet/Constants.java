@@ -41,6 +41,7 @@ import com.coinomi.core.coins.PotcoinMain;
 import com.coinomi.core.coins.ReddcoinMain;
 import com.coinomi.core.coins.RubycoinMain;
 import com.coinomi.core.coins.ShadowCashMain;
+import com.coinomi.core.coins.TritiumMain;
 import com.coinomi.core.coins.UroMain;
 import com.coinomi.core.coins.VergeMain;
 import com.coinomi.core.coins.VertcoinMain;
@@ -221,7 +222,9 @@ public class Constants {
             new CoinAddress(EvotionCoinMain.get(),  new ServerAddress("bellachess.com", 5022),
                                                     new ServerAddress("192.241.191.56", 5023)),
             new CoinAddress(RealPointCoinMain.get(),new ServerAddress("185.5.55.195", 5024),
-                                                    new ServerAddress("212.24.96.240", 5025))
+                                                    new ServerAddress("212.24.96.240", 5025)),
+            new CoinAddress(TritiumMain.get(),      new ServerAddress("54.68.252.115", 5025),
+                                                    new ServerAddress("52.42.64.29", 5024))
     );
 
     public static final HashMap<CoinType, Integer> COINS_ICONS;
@@ -273,6 +276,7 @@ public class Constants {
         COINS_ICONS.put(CoinID.IXCOIN_MAIN.getCoinType(), R.drawable.ixcoin);
         COINS_ICONS.put(CoinID.EVOTION_MAIN.getCoinType(), R.drawable.evotioncoin);
         COINS_ICONS.put(CoinID.REALPOINTCOIN_MAIN.getCoinType(), R.drawable.realpointcoin);
+        COINS_ICONS.put(CoinID.TRITIUM_MAIN.getCoinType(), R.drawable.tritium);
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
@@ -318,6 +322,7 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.EVOTION_MAIN.getCoinType(), "http://45.32.232.191:3001/tx/%s");
         //to do: add block explorer for rpc-wallet
         COINS_BLOCK_EXPLORERS.put(CoinID.REALPOINTCOIN_MAIN.getCoinType(), "http://45.32.232.191:3001/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.TRITIUM_MAIN.getCoinType(), "http://rptblockchain.com/tx/%s");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
@@ -371,6 +376,7 @@ public class Constants {
             //ShadowCashMain.get(),
             //VergeMain.get(),
             //VertcoinMain.get(),
+            TritiumMain.get(),
             VpncoinMain.get()//,
             //BitcoinTest.get(),
             //LitecoinTest.get(),
