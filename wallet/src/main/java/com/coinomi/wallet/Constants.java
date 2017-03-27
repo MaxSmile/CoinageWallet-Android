@@ -321,8 +321,8 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.IXCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ixc/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.EVOTION_MAIN.getCoinType(), "http://45.32.232.191:3001/tx/%s");
         //to do: add block explorer for rpc-wallet
-        COINS_BLOCK_EXPLORERS.put(CoinID.REALPOINTCOIN_MAIN.getCoinType(), "http://45.32.232.191:3001/tx/%s");
-        COINS_BLOCK_EXPLORERS.put(CoinID.TRITIUM_MAIN.getCoinType(), "http://rptblockchain.com/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.REALPOINTCOIN_MAIN.getCoinType(), "http://rptblockchain.com/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.TRITIUM_MAIN.getCoinType(), "http://54.68.252.115/tx/%s");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
