@@ -377,9 +377,9 @@ public class Constants {
             //VergeMain.get(),
             //VertcoinMain.get(),
             TritiumMain.get(),
-            VpncoinMain.get()//,
+            VpncoinMain.get(),
             //BitcoinTest.get(),
-            //LitecoinTest.get(),
+            LitecoinTest.get()
             //DogecoinTest.get()
     );
 }
