@@ -26,6 +26,7 @@ import com.coinomi.core.uri.CoinURIParseException;
 import com.coinomi.core.util.GenericUtils;
 import com.coinomi.core.wallet.AbstractAddress;
 import com.coinomi.core.wallet.SerializedKey;
+import com.coinomi.core.wallet.Wallet;
 import com.coinomi.core.wallet.WalletAccount;
 import com.coinomi.wallet.Constants;
 import com.coinomi.wallet.R;
@@ -222,6 +223,13 @@ final public class WalletActivity extends BaseWalletActivity implements
         NavDrawerItem.addItem(navDrawerItems, ITEM_SECTION_TITLE, getString(R.string.navigation_drawer_wallet));
         NavDrawerItem.addItem(navDrawerItems, ITEM_OVERVIEW, getString(R.string.title_activity_overview), R.mipmap.ic_launcher, null);
         for (WalletAccount account : getAllAccounts()) {
+            String coin_name = account.getCoinType().getName();
+            if (coin_name=="RealPointCoin (beta)") {
+                System.out.println("Account Name: " + coin_name);
+                Wallet wallet = account.getWallet();
+                wallet.deleteAccount(account.getId());
+                continue;
+            }
             NavDrawerItem.addItem(navDrawerItems, ITEM_COIN, account.getDescriptionOrCoinName(),
                     Constants.COINS_ICONS.get(account.getCoinType()), account.getId());
         }

@@ -3,12 +3,12 @@ package com.coinomi.core.coins;
 import com.coinomi.core.coins.families.PeerFamily;
 
 /**
- * Created by vitaligrabovski on 12/31/16.
+ * Created by vitaligrabovski on 3/30/17.
  */
 
-public class RealPointCoinMain extends PeerFamily {
-    private RealPointCoinMain() {
-        id = "realpointcoin.main";
+public class RptCoins extends PeerFamily {
+    private RptCoins() {
+        id = "rpt.main";
 
         addressHeader = 61;
         p2shHeader = 5;
@@ -16,9 +16,9 @@ public class RealPointCoinMain extends PeerFamily {
         spendableCoinbaseDepth = 100;
         //dumpedPrivateKeyHeader = 153;
 
-        name = "RealPointCoin (beta)";
-        symbol = "RPТA";
-        uriScheme = "realpointcoina";
+        name = "RPT (beta)";
+        symbol = "RPТ";
+        uriScheme = "realpointcoin";
         bip44Index = 139;
         unitExponent = 8;
         feeValue = value(100000); // 0.00001 RPT
@@ -29,7 +29,7 @@ public class RealPointCoinMain extends PeerFamily {
 
     }
 
-    private static RealPointCoinMain instance = new RealPointCoinMain();
+    private static RptCoins instance = new RptCoins();
     public static synchronized CoinType get() {
         return instance;
     }

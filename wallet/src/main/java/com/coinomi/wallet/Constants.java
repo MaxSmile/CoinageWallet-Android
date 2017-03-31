@@ -39,6 +39,7 @@ import com.coinomi.core.coins.ParkbyteMain;
 import com.coinomi.core.coins.PeercoinMain;
 import com.coinomi.core.coins.PotcoinMain;
 import com.coinomi.core.coins.ReddcoinMain;
+import com.coinomi.core.coins.RptCoins;
 import com.coinomi.core.coins.RubycoinMain;
 import com.coinomi.core.coins.ShadowCashMain;
 import com.coinomi.core.coins.TritiumMain;
@@ -221,8 +222,10 @@ public class Constants {
                                                     new ServerAddress("ixc-cce-2.coinomi.net", 5047)),
             new CoinAddress(EvotionCoinMain.get(),  new ServerAddress("bellachess.com", 5022),
                                                     new ServerAddress("192.241.191.56", 5023)),
-            new CoinAddress(RealPointCoinMain.get(),new ServerAddress("185.5.55.195", 5024),
-                                                    new ServerAddress("212.24.96.240", 5025)),
+            /*new CoinAddress(RealPointCoinMain.get(),new ServerAddress("185.5.55.195", 6024),
+                                                    new ServerAddress("212.24.96.240", 6025)),*/
+            new CoinAddress(RptCoins.get(),         new ServerAddress("185.5.55.195", 6024),
+                                                    new ServerAddress("212.24.96.240", 6025)),
             new CoinAddress(TritiumMain.get(),      new ServerAddress("54.68.252.115", 5025),
                                                     new ServerAddress("52.42.64.29", 5024))
     );
@@ -275,7 +278,8 @@ public class Constants {
         //COINS_ICONS.put(CoinID.RICHCOIN_MAIN.getCoinType(), R.drawable.richcoin);
         COINS_ICONS.put(CoinID.IXCOIN_MAIN.getCoinType(), R.drawable.ixcoin);
         COINS_ICONS.put(CoinID.EVOTION_MAIN.getCoinType(), R.drawable.evotioncoin);
-        COINS_ICONS.put(CoinID.REALPOINTCOIN_MAIN.getCoinType(), R.drawable.realpointcoin);
+        //COINS_ICONS.put(CoinID.REALPOINTCOIN_MAIN.getCoinType(), R.drawable.realpointcoin);
+        COINS_ICONS.put(CoinID.RPT_MAIN.getCoinType(), R.drawable.realpointcoin);
         COINS_ICONS.put(CoinID.TRITIUM_MAIN.getCoinType(), R.drawable.tritium);
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
@@ -321,7 +325,8 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.IXCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ixc/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.EVOTION_MAIN.getCoinType(), "http://45.32.232.191:3001/tx/%s");
         //to do: add block explorer for rpc-wallet
-        COINS_BLOCK_EXPLORERS.put(CoinID.REALPOINTCOIN_MAIN.getCoinType(), "http://rptblockchain.com/tx/%s");
+        //COINS_BLOCK_EXPLORERS.put(CoinID.REALPOINTCOIN_MAIN.getCoinType(), "http://rptblockchain.com/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.RPT_MAIN.getCoinType(), "http://rptblockchain.com/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.TRITIUM_MAIN.getCoinType(), "http://54.68.252.115/tx/%s");
     }
 
@@ -351,7 +356,8 @@ public class Constants {
             //Changed for Evotion
             //EvotionCoinMain.get(),
             LitecoinMain.get(),
-            RealPointCoinMain.get(),
+            //RealPointCoinMain.get(),
+            RptCoins.get(),
             BlackcoinMain.get(),
             //FeathercoinMain.get(),
             //GcrMain.get(),
