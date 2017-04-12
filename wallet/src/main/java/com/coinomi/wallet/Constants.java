@@ -278,7 +278,7 @@ public class Constants {
         //COINS_ICONS.put(CoinID.RICHCOIN_MAIN.getCoinType(), R.drawable.richcoin);
         COINS_ICONS.put(CoinID.IXCOIN_MAIN.getCoinType(), R.drawable.ixcoin);
         COINS_ICONS.put(CoinID.EVOTION_MAIN.getCoinType(), R.drawable.evotioncoin);
-        //COINS_ICONS.put(CoinID.REALPOINTCOIN_MAIN.getCoinType(), R.drawable.realpointcoin);
+        COINS_ICONS.put(CoinID.REALPOINTCOIN_MAIN.getCoinType(), R.drawable.realpointcoin);
         COINS_ICONS.put(CoinID.RPT_MAIN.getCoinType(), R.drawable.realpointcoin);
         COINS_ICONS.put(CoinID.TRITIUM_MAIN.getCoinType(), R.drawable.tritium);
 
