@@ -247,9 +247,13 @@ public class GenericUtils {
         for (CoinType type : CoinID.getSupportedCoins()) {
             if (type.getAcceptableAddressCodes() == null) continue;
             for (int addressCode : type.getAcceptableAddressCodes()) {
+                String typeid_ = type.getId();
                 if (addressCode == version) {
-                    builder.add(type);
-                    break;
+                    if (typeid_ != "realpointcoin.main" && typeid_ != "rpt.main") {
+                        builder.add(type);
+                        break;
+                    }
+                    //
                 }
             }
         }

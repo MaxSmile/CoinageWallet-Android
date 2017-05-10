@@ -68,6 +68,7 @@ public enum CoinID {
     EVOTION_MAIN(EvotionCoinMain.get()),
     REALPOINTCOIN_MAIN(RealPointCoinMain.get()),
     RPT_MAIN(RptCoins.get()),
+    RPTCOINS_MAIN3(RptCoins3.get()),
     TRITIUM_MAIN(TritiumMain.get());
     ;
 

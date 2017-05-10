@@ -224,7 +224,8 @@ final public class WalletActivity extends BaseWalletActivity implements
         NavDrawerItem.addItem(navDrawerItems, ITEM_OVERVIEW, getString(R.string.title_activity_overview), R.mipmap.ic_launcher, null);
         for (WalletAccount account : getAllAccounts()) {
             String coin_name = account.getCoinType().getName();
-            if (coin_name=="RealPointCoin (beta)") {
+            String coin_id_ = account.getCoinType().getId();
+            if (coin_name=="RealPointCoin (beta)" || coin_id_ == "rpt.main") {
                 System.out.println("Account Name: " + coin_name);
                 Wallet wallet = account.getWallet();
                 wallet.deleteAccount(account.getId());
