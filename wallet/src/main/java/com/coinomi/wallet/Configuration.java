@@ -58,6 +58,8 @@ public class Configuration {
 
     public static final String PREFS_KEY_TERMS_ACCEPTED = "terms_accepted";
 
+    public static final String PREFS_FEE_BTC_D = "btc_fee_";
+
     private static final int PREFS_DEFAULT_BTC_SHIFT = 3;
     private static final int PREFS_DEFAULT_BTC_PRECISION = 2;
 
@@ -216,6 +218,17 @@ public class Configuration {
         edit.putString(PREFS_KEY_CACHED_EXCHANGE_LOCAL_CURRENCY, currency);
         edit.putString(PREFS_KEY_CACHED_EXCHANGE_RATES_JSON, exchangeRatesJson.toString());
         edit.apply();
+    }
+
+    public void setBtcFee_(String fee_) {
+        final SharedPreferences.Editor edit = prefs.edit();
+        edit.putString(PREFS_FEE_BTC_D, fee_);
+        edit.apply();
+        log.info("btc fee {} is saved", fee_);
+    }
+
+    public String getBtcFee_() {
+        return prefs.getString(PREFS_FEE_BTC_D, "0.003");
     }
 
     public boolean getLastExchangeDirection() {

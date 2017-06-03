@@ -23,6 +23,7 @@ import com.coinomi.core.util.GenericUtils;
 import com.coinomi.core.wallet.Wallet;
 import com.coinomi.core.wallet.WalletAccount;
 import com.coinomi.wallet.Configuration;
+import com.coinomi.wallet.DynamicFeeProvider;
 import com.coinomi.wallet.ExchangeRatesProvider;
 import com.coinomi.wallet.ExchangeRatesProvider.ExchangeRate;
 import com.coinomi.wallet.R;
@@ -59,6 +60,7 @@ public class OverviewFragment extends Fragment{
     private static final int SET_EXCHANGE_RATES = 2;
 
     private static final int ID_RATE_LOADER = 0;
+    private static final int ID_BTC_FEE_LOADER = 14;
 
     private final Handler handler = new MyHandler(this);
 
@@ -91,6 +93,7 @@ public class OverviewFragment extends Fragment{
 
     private AccountListAdapter adapter;
     Map<String, ExchangeRate> exchangeRates;
+    String _dynamicBtcFee = "";
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
     @Bind(R.id.swipeContainer) SwipeRefreshLayout swipeContainer;
@@ -121,6 +124,8 @@ public class OverviewFragment extends Fragment{
         exchangeRates = ExchangeRatesProvider.getRates(
                 application.getApplicationContext(), config.getExchangeCurrencyCode());
         if (adapter != null) adapter.setExchangeRates(exchangeRates);
+
+        //_dynamicBtcFee =  DynamicFeeProvider.getBtcFee(application.getApplicationContext(), "BTC" );
     }
 
     @Override
@@ -203,11 +208,13 @@ public class OverviewFragment extends Fragment{
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         getLoaderManager().initLoader(ID_RATE_LOADER, null, rateLoaderCallbacks);
+        getLoaderManager().initLoader(ID_BTC_FEE_LOADER, null, feeBtcLoaderCallbacks);
     }
 
     @Override
     public void onDetach() {
         getLoaderManager().destroyLoader(ID_RATE_LOADER);
+        getLoaderManager().destroyLoader(ID_BTC_FEE_LOADER);
         listener = null;
         super.onDetach();
     }
@@ -223,6 +230,7 @@ public class OverviewFragment extends Fragment{
 
         updateWallet();
         updateView();
+
     }
 
     @Override
@@ -303,6 +311,22 @@ public class OverviewFragment extends Fragment{
 
                 handler.sendMessage(handler.obtainMessage(SET_EXCHANGE_RATES, builder.build()));
             }
+        }
+
+        @Override
+        public void onLoaderReset(final Loader<Cursor> loader) { }
+    };
+
+    private final LoaderManager.LoaderCallbacks<Cursor> feeBtcLoaderCallbacks = new LoaderManager.LoaderCallbacks<Cursor>() {
+        @Override
+        public Loader<Cursor> onCreateLoader(final int id, final Bundle args) {
+            String localSymbol = "BTC";
+            return new DynamicFeeBtcLoader(getActivity(), config, localSymbol);
+        }
+
+        @Override
+        public void onLoadFinished(final Loader<Cursor> loader, final Cursor data) {
+            //
         }
 
         @Override

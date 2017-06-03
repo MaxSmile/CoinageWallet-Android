@@ -1168,7 +1168,10 @@ abstract public class TransactionWatcherWallet extends AbstractWallet<BitTransac
 
     @Override
     public void onTransactionUpdate(BitTransaction tx) {
-        if (log.isInfoEnabled()) log.info("Got a new transaction {}", tx.getHash());
+        if (log.isInfoEnabled()) {
+            log.info("Got a new transaction {}", tx.getHash());
+            log.info("Got a new txinout {}", Utils.HEX.encode(tx.bitcoinSerialize()));
+        }
         lock.lock();
         try {
             addNewTransactionIfNeeded(tx);
@@ -1455,7 +1458,9 @@ abstract public class TransactionWatcherWallet extends AbstractWallet<BitTransac
             lock.lock();
             try {
                 if (log.isInfoEnabled()) {
-                    log.info("Broadcasting tx {}", Utils.HEX.encode(tx.bitcoinSerialize()));
+                    //log.info("Broadcasting tx {}", Utils.HEX.encode(tx.bitcoinSerialize()));
+                    log.info("Broadcasting tx1.1 {}", Utils.HEX.encode(tx.bitcoinSerialize()));
+                    log.info("Broadcasting tx size {}", tx.bitcoinSerialize().length);
                 }
                 boolean success = blockchainConnection.broadcastTxSync(tx);
                 if (success) {
@@ -1478,7 +1483,8 @@ abstract public class TransactionWatcherWallet extends AbstractWallet<BitTransac
             lock.lock();
             try {
                 if (log.isInfoEnabled()) {
-                    log.info("Broadcasting tx {}", Utils.HEX.encode(tx.bitcoinSerialize()));
+                    //log.info("Broadcasting tx {}", Utils.HEX.encode(tx.bitcoinSerialize()));
+                    log.info("Broadcasting tx1.2 {}", Utils.HEX.encode(tx.bitcoinSerialize()));
                 }
                 blockchainConnection.broadcastTx(tx, listener != null ? listener : this);
             } finally {

@@ -241,15 +241,19 @@
 
         <provider
             android:name="com.coinomi.wallet.ExchangeRatesProvider"
-            android:authorities="com.vasilkoff.realpointcoin_wallet.exchange_rates"
+            android:authorities="com.vasilkoff.coin.wallet.exchange_rates"
+            android:exported="false" />
+        <provider
+            android:name="com.coinomi.wallet.DynamicFeeProvider"
+            android:authorities="com.vasilkoff.coin.wallet.btc_dynamic_fee"
             android:exported="false" />
         <provider
             android:name="com.coinomi.wallet.AddressBookProvider"
-            android:authorities="com.vasilkoff.realpointcoin_wallet.address_book"
+            android:authorities="com.vasilkoff.coin.wallet.address_book"
             android:exported="false" />
         <provider
             android:name=".ExchangeHistoryProvider"
-            android:authorities="com.vasilkoff.realpointcoin_wallet.exchange_history"
+            android:authorities="com.vasilkoff.coin.wallet.exchange_history"
             android:exported="false" />
 
         <service
