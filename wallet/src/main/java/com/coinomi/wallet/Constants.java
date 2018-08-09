@@ -138,8 +138,8 @@ public class Constants {
                                                     new ServerAddress("btc-cce-2.coinomi.net", 5001)),
             new CoinAddress(BitcoinTest.get(),      new ServerAddress("btc-testnet-cce-1.coinomi.net", 15001),
                                                     new ServerAddress("btc-testnet-cce-2.coinomi.net", 15001)),
-            /*new CoinAddress(DogecoinMain.get(),     new ServerAddress("doge-cce-1.coinomi.net", 5003),
-                                                    new ServerAddress("doge-cce-2.coinomi.net", 5003)),*/
+            new CoinAddress(DogecoinMain.get(),     new ServerAddress("doge-cce-1.coinomi.net", 5003),
+                                                    new ServerAddress("doge-cce-2.coinomi.net", 5003)),
             new CoinAddress(DogecoinTest.get(),     new ServerAddress("doge-testnet-cce-1.coinomi.net", 15003),
                                                     new ServerAddress("doge-testnet-cce-2.coinomi.net", 15003)),
             new CoinAddress(LitecoinMain.get(),     new ServerAddress("ltc-cce-1.coinomi.net", 5002),
@@ -239,13 +239,13 @@ public class Constants {
         COINS_ICONS = new HashMap<>();
         COINS_ICONS.put(CoinID.BITCOIN_MAIN.getCoinType(), R.drawable.bitcoin);
         COINS_ICONS.put(CoinID.BITCOIN_TEST.getCoinType(), R.drawable.bitcoin_test);
-        //COINS_ICONS.put(CoinID.DOGECOIN_MAIN.getCoinType(), R.drawable.dogecoin);
+        COINS_ICONS.put(CoinID.DOGECOIN_MAIN.getCoinType(), R.drawable.dogecoin);
         COINS_ICONS.put(CoinID.DOGECOIN_TEST.getCoinType(), R.drawable.dogecoin_test);
         COINS_ICONS.put(CoinID.LITECOIN_MAIN.getCoinType(), R.drawable.litecoin);
         COINS_ICONS.put(CoinID.LITECOIN_TEST.getCoinType(), R.drawable.litecoin_test);
         COINS_ICONS.put(CoinID.PEERCOIN_MAIN.getCoinType(), R.drawable.peercoin);
         COINS_ICONS.put(CoinID.DASH_MAIN.getCoinType(), R.drawable.dash);
-        //COINS_ICONS.put(CoinID.REDDCOIN_MAIN.getCoinType(), R.drawable.reddcoin);
+        COINS_ICONS.put(CoinID.REDDCOIN_MAIN.getCoinType(), R.drawable.reddcoin);
         COINS_ICONS.put(CoinID.NUSHARES_MAIN.getCoinType(), R.drawable.nushares);
         COINS_ICONS.put(CoinID.NUBITS_MAIN.getCoinType(), R.drawable.nubits);
         COINS_ICONS.put(CoinID.BLACKCOIN_MAIN.getCoinType(), R.drawable.blackcoin);
@@ -278,7 +278,7 @@ public class Constants {
         COINS_ICONS.put(CoinID.ASIACOIN_MAIN.getCoinType(), R.drawable.asiacoin);
         COINS_ICONS.put(CoinID.EGULDEN_MAIN.getCoinType(), R.drawable.egulden);
         COINS_ICONS.put(CoinID.CLUBCOIN_MAIN.getCoinType(), R.drawable.clubcoin);
-        //COINS_ICONS.put(CoinID.RICHCOIN_MAIN.getCoinType(), R.drawable.richcoin);
+        COINS_ICONS.put(CoinID.RICHCOIN_MAIN.getCoinType(), R.drawable.richcoin);
         COINS_ICONS.put(CoinID.IXCOIN_MAIN.getCoinType(), R.drawable.ixcoin);
         COINS_ICONS.put(CoinID.EVOTION_MAIN.getCoinType(), R.drawable.evotioncoin);
         COINS_ICONS.put(CoinID.REALPOINTCOIN_MAIN.getCoinType(), R.drawable.realpointcoin);
@@ -289,7 +289,7 @@ public class Constants {
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_TEST.getCoinType(), "https://chain.so/tx/BTCTEST/%s");
-        //COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOIN_MAIN.getCoinType(), "https://chain.so/tx/DOGE/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOIN_MAIN.getCoinType(), "https://chain.so/tx/DOGE/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOIN_TEST.getCoinType(), "https://chain.so/tx/DOGETEST/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.LITECOIN_MAIN.getCoinType(), "http://ltc.blockr.io/tx/info/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.LITECOIN_TEST.getCoinType(), "https://chain.so/tx/LTCTEST/%s");
@@ -297,7 +297,7 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.DASH_MAIN.getCoinType(), "http://explorer.dashpay.io/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.NUSHARES_MAIN.getCoinType(), "http://blockexplorer.nu/transactions/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.NUBITS_MAIN.getCoinType(), "http://blockexplorer.nu/transactions/%s");
-        //COINS_BLOCK_EXPLORERS.put(CoinID.REDDCOIN_MAIN.getCoinType(), "http://live.reddcoin.com/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.REDDCOIN_MAIN.getCoinType(), "http://live.reddcoin.com/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.BLACKCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/blk/tx.dws?%s.htm");
         COINS_BLOCK_EXPLORERS.put(CoinID.MONACOIN_MAIN.getCoinType(), "https://bchain.info/MONA/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.RUBYCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/rby/tx.dws?%s");
@@ -325,7 +325,7 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.BATACOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/bta/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.ASIACOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ac/tx.dws?%s.htm");
         COINS_BLOCK_EXPLORERS.put(CoinID.EGULDEN_MAIN.getCoinType(), "https://chainz.cryptoid.info/efl/tx.dws?%s");
-        //COINS_BLOCK_EXPLORERS.put(CoinID.RICHCOIN_MAIN.getCoinType(), "https://explorer.richcoin.us/transaction?transaction=%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.RICHCOIN_MAIN.getCoinType(), "https://explorer.richcoin.us/transaction?transaction=%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.IXCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ixc/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.EVOTION_MAIN.getCoinType(), "http://45.32.232.191:3001/tx/%s");
         //to do: add block explorer for rpc-wallet
@@ -344,19 +344,19 @@ public class Constants {
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
             BitcoinMain.get(),
-            //AsiacoinMain.get(),
-            //AuroracoinMain.get(),
-            //BatacoinMain.get(),
+            AsiacoinMain.get(),
+            AuroracoinMain.get(),
+            BatacoinMain.get(),
 //            BurstMain.get(),
-            //CanadaeCoinMain.get(),
-            //CannacoinMain.get(),
-            //ClamsMain.get(),
-            //ClubcoinMain.get(),
-            //DashMain.get(),
-            //DigibyteMain.get(),
-            //DigitalcoinMain.get(),
-            //DogecoinMain.get(),
-            //EguldenMain.get(),
+            CanadaeCoinMain.get(),
+            CannacoinMain.get(),
+            ClamsMain.get(),
+            ClubcoinMain.get(),
+            DashMain.get(),
+            DigibyteMain.get(),
+            DigitalcoinMain.get(),
+            DogecoinMain.get(),
+            EguldenMain.get(),
             //Changed for Evotion
             //EvotionCoinMain.get(),
             LitecoinMain.get(),
@@ -364,33 +364,33 @@ public class Constants {
             //RptCoins.get(),
             RptCoins3.get(),
             BlackcoinMain.get(),
-            //FeathercoinMain.get(),
-            //GcrMain.get(),
-            //GuldenMain.get(),
-            //IxcoinMain.get(),
-            //JumbucksMain.get(),
-            //LitecoinMain.get(),
-            //MonacoinMain.get(),
+            FeathercoinMain.get(),
+            GcrMain.get(),
+            GuldenMain.get(),
+            IxcoinMain.get(),
+            JumbucksMain.get(),
+            LitecoinMain.get(),
+            MonacoinMain.get(),
             NamecoinMain.get(),
-            //NeoscoinMain.get(),
+            NeoscoinMain.get(),
             NovacoinMain.get(),
-            //NuBitsMain.get(),
-            //NuSharesMain.get(),
+            NuBitsMain.get(),
+            NuSharesMain.get(),
             NxtMain.get(),
             OKCashMain.get(),
-            //ParkbyteMain.get(),
+            ParkbyteMain.get(),
             PeercoinMain.get(),
-            //PotcoinMain.get(),
-            //ReddcoinMain.get(),
-            //RichcoinMain.get(),
-            //RubycoinMain.get(),
-            //ShadowCashMain.get(),
-            //VergeMain.get(),
-            //VertcoinMain.get(),
+            PotcoinMain.get(),
+            ReddcoinMain.get(),
+            RichcoinMain.get(),
+            RubycoinMain.get(),
+            ShadowCashMain.get(),
+            VergeMain.get(),
+            VertcoinMain.get(),
             TritiumMain.get(),
             VpncoinMain.get(),
-            //BitcoinTest.get(),
-            LitecoinTest.get()
-            //DogecoinTest.get()
+            BitcoinTest.get(),
+            LitecoinTest.get(),
+            DogecoinTest.get()
     );
 }
