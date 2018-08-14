@@ -21,6 +21,7 @@ dependencies {
     compile 'org.json:json:20080701'
 
     compile 'com.squareup.okhttp:okhttp:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.10.0'
 
     testCompile 'junit:junit:4.11'
     testCompile 'org.mockito:mockito-all:1.9.5'
