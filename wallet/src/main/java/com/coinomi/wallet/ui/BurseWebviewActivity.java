@@ -71,7 +71,7 @@ public class BurseWebviewActivity extends AppCompatActivity {
                 progDailog.dismiss();
             }
         });
-
+        webView.animate().alpha(0).setDuration(1).setInterpolator(new DecelerateInterpolator()).start();
         progDailog.show();
         webView.loadUrl("https://coinagewallet.com/login");
     }
