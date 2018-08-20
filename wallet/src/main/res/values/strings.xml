@@ -295,8 +295,13 @@
     <string name="debugging_test_wallet_password_results" translatable="false">Unlocked wallet: %1$s\n\nFingerprints\nInput: %2$s\nKey: %3$s</string>
     <!-- Overview -->
     <string name="title_activity_overview" translatable="false">Overview</string>
+    <!-- Burse -->
+    <string name="activity_burse_please_wait">Please wait</string>
+    <string name="activity_burse_loading">Loading</string>
     <!-- Exchange -->
     <string name="title_activity_trade">Exchange</string>
+    <string name="title_activity_trade_shapeshift">Shapeshift exchange</string>
+    <string name="title_activity_trade_coinage">Coinage burse</string>
     <string name="trade_info">Select the coins you wish to exchange.\nThe converted coins will be automatically added to your wallet.</string>
     <string name="trade_info_rates">Given rate includes ShapeShift.io transaction fee</string>
     <string name="trade_from_coin_label">Exchange</string>

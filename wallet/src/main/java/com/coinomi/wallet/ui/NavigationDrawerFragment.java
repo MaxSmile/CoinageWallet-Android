@@ -218,8 +218,11 @@ public class NavigationDrawerFragment extends Fragment {
                 case ITEM_COIN:
                     listener.onAccountSelected((String) item.itemData);
                     break;
-                case ITEM_TRADE:
+                case ITEM_TRADE_SHAPESHIFT:
                     listener.onTradeSelected();
+                    break;
+                case ITEM_TRADE_COINAGE:
+                    listener.onBurseSelected();
                     break;
                 case ITEM_OVERVIEW:
                     listener.onOverviewSelected();
@@ -315,6 +318,7 @@ public class NavigationDrawerFragment extends Fragment {
         void onAccountSelected(String accountId);
         void onAddCoinsSelected();
         void onTradeSelected();
+        void onBurseSelected();
         void onOverviewSelected();
     }
 }

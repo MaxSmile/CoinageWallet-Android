@@ -49,7 +49,8 @@ import javax.annotation.Nullable;
 import static com.coinomi.wallet.ui.NavDrawerItemType.ITEM_COIN;
 import static com.coinomi.wallet.ui.NavDrawerItemType.ITEM_OVERVIEW;
 import static com.coinomi.wallet.ui.NavDrawerItemType.ITEM_SECTION_TITLE;
-import static com.coinomi.wallet.ui.NavDrawerItemType.ITEM_TRADE;
+import static com.coinomi.wallet.ui.NavDrawerItemType.ITEM_TRADE_COINAGE;
+import static com.coinomi.wallet.ui.NavDrawerItemType.ITEM_TRADE_SHAPESHIFT;
 
 
 /**
@@ -219,7 +220,9 @@ final public class WalletActivity extends BaseWalletActivity implements
     private void createNavDrawerItems() {
         navDrawerItems.clear();
         NavDrawerItem.addItem(navDrawerItems, ITEM_SECTION_TITLE, getString(R.string.navigation_drawer_services));
-        NavDrawerItem.addItem(navDrawerItems, ITEM_TRADE, getString(R.string.title_activity_trade), R.drawable.trade, null);
+        //NavDrawerItem.addItem(navDrawerItems, ITEM_SECTION_TITLE, getString(R.string.title_activity_trade));
+        NavDrawerItem.addItem(navDrawerItems, ITEM_TRADE_SHAPESHIFT, getString(R.string.title_activity_trade_shapeshift), R.drawable.trade, null);
+        NavDrawerItem.addItem(navDrawerItems, ITEM_TRADE_COINAGE, getString(R.string.title_activity_trade_coinage), R.drawable.trade, null);
         NavDrawerItem.addItem(navDrawerItems, ITEM_SECTION_TITLE, getString(R.string.navigation_drawer_wallet));
         NavDrawerItem.addItem(navDrawerItems, ITEM_OVERVIEW, getString(R.string.title_activity_overview), R.mipmap.ic_launcher, null);
         for (WalletAccount account : getAllAccounts()) {
@@ -296,6 +299,11 @@ final public class WalletActivity extends BaseWalletActivity implements
         } else {
             navDrawerSelectAccount(getAccount(lastAccountId), true);
         }
+    }
+
+    @Override
+    public void onBurseSelected() {
+        startActivity(new Intent(WalletActivity.this, BurseWebviewActivity.class));
     }
 
     @Override

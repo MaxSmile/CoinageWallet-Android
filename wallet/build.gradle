@@ -64,6 +64,7 @@ repositories {
 dependencies {
 
 
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile fileTree(dir: '../core/libs', include: ['*.jar'])
     // Testing
@@ -90,4 +91,3 @@ dependencies {
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 }
-
