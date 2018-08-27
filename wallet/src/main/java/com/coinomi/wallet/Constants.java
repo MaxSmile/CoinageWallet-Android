@@ -125,6 +125,7 @@ public class Constants {
     public static final char CURRENCY_PLUS_SIGN = '+';
     public static final char CURRENCY_MINUS_SIGN = '-';
 
+    public static final String COINAGE_BURSE_URL = "https://coinagewallet.com/";
     public static final String MARKET_APP_URL = "market://details?id=%s";
     public static final String BINARY_URL = "https://github.com/MaxSmile/RealPointCoin-Android/tree/master/binaries";
 

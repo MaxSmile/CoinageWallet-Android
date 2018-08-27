@@ -298,6 +298,8 @@
     <!-- Burse -->
     <string name="activity_burse_please_wait">Please wait</string>
     <string name="activity_burse_loading">Loading</string>
+    <string name="activity_burse_title">Coinage Burse</string>
+    <string name="activity_burse_wallets">Wallets</string>
     <!-- Exchange -->
     <string name="title_activity_trade">Exchange</string>
     <string name="title_activity_trade_shapeshift">Shapeshift exchange</string>

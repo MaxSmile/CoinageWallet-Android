@@ -87,9 +87,12 @@ public class WalletApplication extends Application {
     private ShapeShift shapeShift;
     private File txCachePath;
 
+    public static WalletApplication sInstance;
+
     @Override
     public void onCreate() {
         ACRA.init(this);
+        sInstance = this;
 
         config = new Configuration(PreferenceManager.getDefaultSharedPreferences(this));
 
@@ -137,6 +140,10 @@ public class WalletApplication extends Application {
         afterLoadWallet();
 
         Fonts.initFonts(this.getAssets());
+    }
+
+    public static Context getAppContext() {
+        return sInstance.getApplicationContext();
     }
 
     private void createTxCache() {

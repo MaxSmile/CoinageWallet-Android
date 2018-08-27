@@ -251,7 +251,8 @@
             android:name=".service.CoinServiceImpl"
             android:exported="false" />
 
-        <activity android:name=".ui.BurseWebviewActivity"></activity>
+        <activity android:name=".ui.BurseWebviewActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
